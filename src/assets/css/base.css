@@ -1,0 +1,30 @@
+body{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* width: 400px;  */
+    
+}
+ul{
+    margin: 0;
+    padding: 0;
+    /* display:inline-block; */
+}
+ul li{
+    padding:0;
+    margin:0;
+    list-style:none;
+    float: left;
+}
+a{
+    text-decoration: none;
+}
+.clearfix:after{/*伪元素是行内元素 正常浏览器清除浮动方法*/
+    content: "";
+    display: block;
+    height: 0;
+    clear:both;
+    visibility: hidden;
+}
+

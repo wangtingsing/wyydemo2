@@ -1,0 +1,47 @@
+/* 覆盖element中的样式 */
+.el-carousel__button{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+  }
+.is-active .el-carousel__button{
+  background-color: red;
+}
+.el-message{
+  position: relative;
+  min-width: 100px;
+  width: 200px;
+  max-width: 320px;
+  /* background-color: black; */
+  /* opacity: .4; */
+  color: white;
+  border: 0;
+  background-color: red;
+  z-index: 9;
+  /* width: 300px; */
+ }
+ .el-message::after{
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   background-color: black;
+   opacity: .6;
+  min-width: 100px;
+  width: 200px;
+  height: 44px;
+  max-width: 320px;
+  /* background-color: black; */
+  /* opacity: .4; */
+  color: white;
+  border: 0;
+  z-index: -1;
+  /* width: 300px; */
+ }
+
+.el-message .el-icon-info{
+ font-size: 0;
+}
+.el-message--info .el-message__content{
+  color: white;
+}
